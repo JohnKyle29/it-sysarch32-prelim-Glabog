@@ -1,0 +1,128 @@
+header {
+  padding: 0px;
+  
+}
+.logo{
+  align-items: center;
+  
+}
+
+h1 {
+  
+  text-align:center;
+}
+
+
+.pokedex {
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+
+/* App.css */
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+ 
+}
+
+.pokemon {
+  width: 200px;
+  margin: 10px;
+  margin-left:5px;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 10);
+}
+.pokemon:hover{
+  transform: scale(1.1);
+  transition: 1.1s;
+}
+
+.stats-left{
+  float:left;
+  text-align:justify;
+
+}
+.stats-right{
+  float:right;
+  text-align: justify;
+}
+.pokemonType {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.pokemonType > div {
+  padding: 10px;
+  margin:10px;
+  width: 100px;
+  border-radius: 30px;
+}
+
+.pokemonType.single-type > div {
+  border: 3px solid green; /* Border for single type */
+}
+
+.pokemonType.double-type > div {
+  border: 3px solid green; /* Border for each type in double type */
+  margin-right: 5px; /* Add some space between types */
+}
+
+.pokemon img {
+  max-width: 150px;
+  transition: transform 0.3 ease;
+}
+
+
+.language-buttons {
+  display: flex;
+  justify-content: center;   
+}
+.language-buttons button{
+  padding:10px;
+  margin:10px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  border-color: blue;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 10);
+
+}
+.pagination {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  margin: 20px; /* Add margin above pagination buttons */
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 15px; 
+  background-color: pink;
+  border-color: blueviolet;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 10);
+  border-radius: 10px;
+/* Add spacing between buttons */
+  
+}
+.pagination :hover{
+  transform: scale(1.4);
+  background-color: brown;
+}
+.language-buttons :hover{
+  transform: scale(1.2);
+  background-color: darkgreen;
+}
+.loading {
+  font-size: 50px;
+  font-style: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+  
+}
